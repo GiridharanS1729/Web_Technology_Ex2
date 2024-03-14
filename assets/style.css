@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    color: none;
+    background-color: transparent;
+}
+
+:root {
+    --tbg1: #fff7a4;
+    --tbg2: #fffbd4;
+    --hltl: #e5e500;
+    --hltd: #adad00;
+    --hltm: #888812;
+    --dp:#ff5151;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+h4 {
+    color: var(--hltd);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* side-content */
+
+.main-l {
+    text-align: center;
+    position: fixed;
+    margin-left: -2vw;
+    margin-top: -1vh;
+    cursor: pointer;
+    z-index: 999;
+    height: 1000px;
+}
+
+.dp {
+    width: 10vw;
+    aspect-ratio: 5/6;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 15vh;
+    filter: saturate(1.5);
+    background-color: var(--dp);
+    border:2px solid var(--dp);
+}
+
+.dp:hover {
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+}
+
+.nav-div {
+    width: 25vw;
+    background-color: #f00;
+    opacity: 0.75;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-lists {
+    margin-top: 5vh;
+}
+
+.nav-lists .nav-item {
+    margin-top: 5vh;
+}
+
+#nav-link {
+    color: #928f8f;
+    font-size: 2vw;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#nav-link:hover {
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.5s linear;
+}
+
+/* main-content-right-side */
+#main-r {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 30vw;
+}
+
+/* about-content */
+#about {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 40vh;
+}
+
+.name {
+    color: var(--hltl);
+    font-size: 3rem;
+    -webkit-text-stroke: 1px #f00;
+    text-shadow: 0px 0px 5px #0f0;
+}
+
+/* education */
+#edu {
+    padding-top: 30vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.edu-det {
+    width: 60vw;
+    margin-bottom: 50px;
+}
+
+.det-sid {
+    font-family: arial;
+    font-weight: 100;
+}
+
+.side-1 {
+    font-weight: 100;
+}
+
+.side-2 {
+    color: #00f;
+    width: 200px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.side-3 {
+    font-family: cambria;
+    padding-left: 0px;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.side-4 {
+    width: 200px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* tech */
+#tech {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+#tech h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#tech ul {
+    margin-left: 30px;
+}
+
+#tech .ar-in,
+#tech .pro-lan,
+#tech .spec {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.ares{
+    list-style-type: '⁘';
+}
+
+/* projects */
+.proj {
+    list-style: none;
+}
+
+.proj li {
+    line-height: 20px;
+}
+
+.proj li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--hltl);
+    font-weight: 700;
+}
+
+.proj li a:hover {
+    color: var(--hltd);
+}
+
+/* co-curriculum */
+#co-cur {
+    padding-top: 10vh;
+}
+
+/* industry */
+.projects {
+    padding-bottom: 10vh;
+}
+
+.ic h3,
+.projects h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.proj li a{
+    font-size:30px;
+    line-height: 40px;
+}
+.indus {
+    border: 4px solid #dbdb51;
+    border-collapse: collapse;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.indus th {
+    background-color: var(--tbg1);
+    color: #640000;
+}
+
+.indus td {
+    background-color: var(--tbg2);
+}
+
+/* contact */
+#contact {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+}
+
+#contact h1 {
+    font-size: 5vw;
+}
+
+.info-names {
+    font-size: 3vw;
+    font-weight: 300;
+    font-family: arial;
+    cursor: pointer;
+}
+.info-names:hover{
+    font-weight:700;
+}
+.f {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 40px;
+    padding-right: 10px;
+    color: #474747;
+}
+
+.f:hover {
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.fa-linkedin:hover ,.lin:hover{
+    color: #3131ff;
+}
+
+.fa-github:hover ,.git:hover{
+    color: #000;
+}
+
+.fa-inbox:hover ,.mai:hover{
+    color: #ffc800;
+}
+
+.fa-instagram:hover ,.ins:hover{
+    color:#fb2bf8;
+}
+
+/* small-screen */
+@media only screen and (max-width: 990px) {
+    .nav-div {
+        display: none;
+        background-color: #fff;
+        width: 130vw;
+        height: 100%;
+    }
+
+    button:focus~.nav-div,
+    button:active~.nav-div,
+    button:hover~.nav-div {
+        display: block;
+
+        .main-l {
+            z-index: 100;
+        }
+
+        .main-r {
+            z-index: 10;
+            width: 150vw;
+            margin-left: -25vw;
+        }
+
+        button {
+            margin-left: -500px;
+            display: none;
+        }
+
+        .dp {
+            display: none;
+        }
+
+        /* navbar */
+        .navbar-collapse {
+            height: 10px;
+            background: none;
+        }
+
+        .nav-lists {
+            background-color: #f00;
+            height: 40vh;
+        }
+
+        .nav-div {
+            height: 0.5vh;
+        }
+
+        /* table */
+        table {
+            width: 150vw;
+        }
+
+    }
+}
