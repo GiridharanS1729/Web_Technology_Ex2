@@ -14,7 +14,12 @@
     --hltl: #e5e500;
     --hltd: #adad00;
     --hltm: #888812;
-    --dp:#ff5151;
+    --dp:#00154f;
+    --bg:#f93800;
+    --bx:#1c253d;
+    --bxh:#2a375b;
+    --hvr:#ffb500;
+
 }
 
 body {
@@ -40,10 +45,10 @@ h4 {
     text-align: center;
     position: fixed;
     margin-left: -2vw;
-    margin-top: -1vh;
+    margin-top: -2vh;
     cursor: pointer;
-    z-index: 999;
-    height: 1000px;
+    overflow-y: auto;
+    height: max-content;
 }
 
 .dp {
@@ -51,10 +56,10 @@ h4 {
     aspect-ratio: 5/6;
     display: inline-block;
     border-radius: 50%;
-    margin-top: 15vh;
+    margin-top: 10vh;
     filter: saturate(1.5);
     background-color: var(--dp);
-    border:2px solid var(--dp);
+    border:4px solid var(--dp);
 }
 
 .dp:hover {
@@ -64,32 +69,40 @@ h4 {
 
 .nav-div {
     width: 25vw;
-    background-color: #f00;
+    background-color: var(--bg);
     opacity: 0.75;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 101vh;
 }
 
+
 .nav-lists {
-    margin-top: 5vh;
+    margin-top: 1vh;
 }
 
 .nav-lists .nav-item {
     margin-top: 5vh;
+    border:5px outset var(--bxh);
+    padding:0 20px;
+    background-color: var(--bx);
+    border-radius: 10px;
 }
-
-#nav-link {
-    color: #928f8f;
+.nav-lists .nav-item:hover{
+    border-style:inset ;
+    transition: border-style 0.001s ease-in-out;
+}
+.nav-link {
+    color: #999;
     font-size: 2vw;
     text-decoration: none;
     font-weight: 600;
 }
 
-#nav-link:hover {
+.nav-item:hover .nav-link {
     color: #fff;
     font-weight: 700;
-    transition: all 0.5s linear;
+    transition: all 0.001s linear;
 }
 
 /* main-content-right-side */
@@ -98,6 +111,7 @@ h4 {
     flex-direction: column;
     position: relative;
     margin-left: 30vw;
+    /* overflow-y: auto; */
 }
 
 /* about-content */
@@ -226,6 +240,7 @@ h4 {
     font-size: 30px;
     text-align: center;
     padding: 5px 10px;
+    margin-left: -20px;
 }
 
 .indus th {
@@ -300,7 +315,8 @@ h4 {
         display: block;
 
         .main-l {
-            z-index: 100;
+            z-index: 1000;
+            margin-top: 100px;
         }
 
         .main-r {
@@ -309,10 +325,6 @@ h4 {
             margin-left: -25vw;
         }
 
-        button {
-            margin-left: -500px;
-            display: none;
-        }
 
         .dp {
             display: none;
